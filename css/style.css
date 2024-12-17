@@ -14,6 +14,38 @@ a {
     color: #1b5e20; /* Deep Green */
 }
 
+img {
+    width: auto; 
+    height: auto;
+    max-width: 5vw;
+    max-height: 5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1601px) {
+    img {
+        max-width: 10vw;
+        max-height: 10vw;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    img {
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    img {
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+}
+
+
+
 /* Body and General Styling */
 body {
     height: 100%; 
@@ -31,16 +63,18 @@ body {
     background-attachment: fixed; 
 }
 
+
 header {
     background-color: rgba(46, 125, 50, 0.85);
     display: flex;
-    margin-left: 21%;
-    width: 58%;
+    margin-left: 0%;
+    width: 100%;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     justify-content: center;
     border-radius:7px;
+    align-items: center; 
 }
 
 header h1 {
@@ -67,6 +101,55 @@ nav a:hover {
     color: #66bb6a; /* Light Green */
 }
 
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 765px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Smaller font for the title */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Add spacing between vertical links */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main Content Styling */
 main {
     padding: 2rem;
@@ -85,12 +168,7 @@ main h2 {
     text-align: center;
 }
 
-img {
-  max-width: 150px;
-  max-height: 150px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 
 .intro {
     text-align: center;
@@ -120,8 +198,8 @@ img {
 
 /* Footer Styling */
 footer {
-    width: 55%;
-    margin-left: 21%; /* half of the known width */ 
+    width: 100%;
+    margin-left: 0%; /* half of the known width */ 
     text-align: center;
     padding: 1rem;
     background-color: rgba(27, 94, 32, 0.85); /* Deep Green */
