@@ -72,6 +72,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: url('../data/BACKGROUND.jpg');
+    background-repeat: no-repeat;
     background-size: contain; 
     background-position: center; 
     background-attachment: fixed; 
@@ -80,7 +81,7 @@ body {
 /* Fix for mobile devices - background moves*/
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
