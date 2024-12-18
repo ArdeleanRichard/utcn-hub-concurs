@@ -253,11 +253,11 @@ footer {
 }
 
 
-width: 100%;
+
 
 footer p {
     font-size: 0.9rem;
-    text-align: center;
+    text-align: center !important;
 }
 
 
