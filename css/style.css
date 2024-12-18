@@ -44,6 +44,20 @@ img {
     }
 }
 
+@media screen and (max-width: 350px) {
+    img {
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+
+    .intro {
+        padding: 0px;
+    }
+
+    section {
+        padding: 0px;
+    }
+}
 
 
 /* Body and General Styling */
@@ -63,6 +77,13 @@ body {
     background-attachment: fixed; 
 }
 
+/* Fix for mobile devices - background moves*/
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
 
 header {
     background-color: rgba(46, 125, 50, 0.85);
@@ -73,7 +94,7 @@ header {
     padding: 1rem 0;
     text-align: center;
     justify-content: center;
-    border-radius:7px;
+    /* border-radius:7px; */
     align-items: center; 
 }
 
@@ -196,17 +217,43 @@ main h2 {
 }
 
 
+@media screen and (max-width: 765px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Smaller font for the title */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Add spacing between vertical links */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+}
+
 /* Footer Styling */
 footer {
-    width: 100%;
     margin-left: 0%; /* half of the known width */ 
     text-align: center;
     padding: 1rem;
     background-color: rgba(27, 94, 32, 0.85); /* Deep Green */
     color: #fff;
     margin-top: auto;
-    border-radius:7px;
+    /* border-radius:7px; */
 }
+
+
+width: 100%;
 
 footer p {
     font-size: 0.9rem;
@@ -373,4 +420,15 @@ ul li strong {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+
+@media screen and (max-width: 350px) {
+    .intro {
+        padding: 0px;
+    }
+
+    section {
+        padding: 0px;
+    }
 }
